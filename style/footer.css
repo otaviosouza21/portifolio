@@ -1,0 +1,59 @@
+
+.footer{
+  background-color: black;
+  color: white;
+}
+
+.footer-conteiner{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 120px 20px 60px 70px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+    gap:40px;
+  }
+
+  .footer-texto{
+    font-size: 1.5rem;
+    color:#CCCCCC;
+  }
+
+  .footer-contato{
+    font-size:2.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer-copy{
+    font-size: 1.125rem;
+    grid-column: 1/-1;
+    color: #8f8f8f;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+  }
+
+
+  @media (max-width:800px){
+    .footer-conteiner{
+      grid-template-columns: 1fr;
+      padding: 100px 0px 0px 20px;
+    }
+
+    .footer-texto{
+      text-align: start;
+      font-size: 1rem;
+
+    }
+
+    .footer-contato{
+      font-size: 1.5rem;
+      align-items: flex-start;
+      word-break: break-all;
+    }
+  } 
+   
